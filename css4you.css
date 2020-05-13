@@ -1,0 +1,23 @@
+h4 {
+    cursor:pointer;
+}
+hr {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    border-top: 0.1px solid !important;
+}
+
+.occ {
+    color: #003482;
+    background-color: #85888c !important;
+}
+
+.lichanged {
+    background-color: #23549e !important;
+    color: white !important;
+}
+.activeee {
+    background-color: #003482 !important;
+    color: white !important;
+    font: bold !important;
+}

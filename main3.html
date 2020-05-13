@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Francie</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header class="jumbotron-fluid text-center" style="border: black 2px solid;padding: 50px;;">
+
+        <p style="font-size:50px">FRANCIE</p>
+
+    </header>
+    <main>
+      <nav class="navbar navbar-expand-sm navbar-dark" style="top:-30px;background-color: black;">
+          <a class="navbar-brand" href="main.html"><img src="znak.png" width="40" height="40" alt=""></a>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation"></button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="main.html">Domovská stránka <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link" href="main2.html">Hymna</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="main4.html">Historie</a>
+                </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="main3.html">Test znalostí</a>
+                  </li>
+
+              </ul>
+
+          </div>
+      </nav>
+      <div id="body-background"> 
+          
+      <div class="bodyy">
+        <h2 style="background-color: #c9ccd1;" class="text-center"><b>Test znalostí</b></h2>
+        <div style="background-color: #ebebeb; margin-top: -10px;">
+            <br>
+      <p class="text-justify">Francie je stát, jehož většina území se nachází v
+
+        <select id="first"> 
+            <option value="0"></option>
+            <option value="1">severní</option>
+            <option value="2">východní</option>
+            <option value="3">západní</option>
+            <option value="4">jižní</option>
+           </select>
+
+          Evropě. Nejčastěji vyznávaným náboženstvím je zde
+          <select id="two"> 
+            <option value="0"></option>
+            <option value="1">protestantismus</option>
+            <option value="2">římskokatolické křesťanství</option>
+            <option value="3">islám</option>
+            <option value="4">judaismus</option>
+           </select>
+           . Francie má rozlohu asi 
+           <select id="three"> 
+            <option value="0"></option>
+            <option value="1">5 439 km²</option>
+            <option value="2">54 396 km²</option>
+            <option value="3">543 965 km²</option>
+            <option value="4">5 439 652 km²</option>
+           </select>
+        Nejvyšším bodem ve Francii je hora
+        <select id="four"> 
+            <option value="0"></option>
+            <option value="1">La Meije</option>
+            <option value="2">Mont Bondone</option>
+            <option value="3">La Tournette</option>
+            <option value="4">Mont Blanc</option>
+           </select> 
+        , která stoupá do výšky až 4 810 m n. m. Od 6. stol. př. n. l. žili na území Francie 
+        <select id="five"> 
+            <option value="0"></option>
+            <option value="1">Keltové</option>
+            <option value="2">Frankové</option>
+            <option value="3">Germáni</option>
+            <option value="4">Římané</option>
+           </select> 
+           .
+           <select id="six"> 
+            <option value="0"></option>
+            <option value="1">Galové</option>
+            <option value="2">Římané</option>
+            <option value="3">Frankové</option>
+            <option value="4">Germáni</option>
+           </select> 
+           se ukázali jako nejsilnější kmen a podmanili si všechny ostatní kmeny. Roku 
+           <select id="seven"> 
+            <option value="0"></option>
+            <option value="1">1897</option>
+            <option value="2">1798</option>
+            <option value="3">1879</option>
+            <option value="4">1789</option>
+           </select> 
+           propukla Velká francouzská revoluce, která vedla k nastolení 1. francouzské republiky. V 19. stol. byla postavena Eiffelova věž, která měří 
+           <select id="eight"> 
+            <option value="0"></option>
+            <option value="1">324m</option>
+            <option value="2">412m</option>
+            <option value="3">298m</option>
+            <option value="4">462m</option>
+           </select> 
+           a ve své době byla největší stavbu světa.
+     </p>
+
+          <div class="text-center" id="textt">Správně: 0 / 8</div>
+        </div>
+        <br>
+          <button id="tlacitko"><b>Potvrdit</b></button>
+      </div>
+
+    </div>
+    </main>
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+  </body>
+</html>

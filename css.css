@@ -1,0 +1,119 @@
+header {
+    font-family: 'Tenor Sans', sans-serif;
+    background-image: url("Francie-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.bodyy {
+    margin-left: 15%;
+    margin-right: 15%;
+    width:70%;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#body-background {
+    top:-30px;
+
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: inset;
+    border-width: 2px;
+}
+footer {
+    color: white;
+    background-color: black;
+    padding:20px;
+
+}
+#body_h {
+    background-color: #ebebeb;
+    margin-left: 30%;
+    margin-right: 30%;
+    width:40%;
+    border: solid 3px black;
+}
+.full {
+    border-top: 2px black solid;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #003482;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.wide {
+    width: 100%;
+}
+@media only screen and (max-width: 1600px) {
+    .bodyy {
+        margin-left: 5%;
+        margin-right: 5%;
+        width:90%;
+    }
+    #mapa {
+        width: 250px;
+        height: 200px;
+    }
+    #vez {
+        width: 200px;
+        height: 300px;
+    }
+    #body_h {
+        margin-left: 5%;
+        margin-right: 5%;
+        width:90%;
+    }
+  }
+@media only screen and (max-width: 1000px) {
+    .bodyy {
+        margin-left: 5%;
+        margin-right: 5%;
+        width:90%;
+    }
+    #mapa {
+        width: 150px;
+        height: 100px;
+    }
+    #vez {
+        width: 150px;
+        height: 225px;
+    }
+    #body_h {
+        margin-left: 5%;
+        margin-right: 5%;
+        width:90%;
+    }
+  }
+  p {
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+ 
+  .changable {
+    background-color: #003482 !important;
+
+  }
+
