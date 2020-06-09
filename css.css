@@ -1,3 +1,5 @@
+
+
 header {
     font-family: 'Tenor Sans', sans-serif;
     background-image: url("Francie-1.jpg");
@@ -7,7 +9,14 @@ header {
     position: relative;
 }
 
+svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 900px;
+    width: 900px;
 
+}
 .bodyy {
     margin-left: 15%;
     margin-right: 15%;
@@ -110,6 +119,7 @@ button{
   p {
       margin-right: 10px;
       margin-left: 10px;
+
   }
  
   .changable {
@@ -117,3 +127,20 @@ button{
 
   }
 
+circle {
+    cursor: pointer;
+}
+rect {
+    cursor: pointer;
+}
+
+text {
+    cursor: pointer;
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+
+}
