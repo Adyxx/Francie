@@ -196,7 +196,7 @@ $(document).ready(function(){
             "name":"Klášter Saint-Savin-sur-Gartempe",
             "text":"Saint-Savin-sur-Gartempe [sén savén syr gartam] je název bývalého francouzského benediktinského opatství v obci Saint-Savin (Vienne), asi 40 km východně od Poitiers. Díky své mimořádné historické a umělecké hodnotě je od roku 1983 zapsáno na Seznamu světového dědictví UNESCO.",
             "img1":"gar1.jpg",
-            "img2":"gar2.jpg"
+            "img2":"garrr2.jpg"
         },
     ];
     let onoff1 = 0;
@@ -235,7 +235,7 @@ $(document).ready(function(){
         }
     });
 
-
+//
     $('#unesco1').click(function(){
         errorcatcher=1;
         if(onoff2==0){
