@@ -203,12 +203,17 @@ $(document).ready(function(){
     let onoff2 = 0;
     let color = '';
     let errorcatcher = 0;
+    let blue = 0;
     $('path').mouseenter(function(){
-        color = $(this).css('fill');
-        $(this).css('fill','blue');
+        if(blue==0){
+            color = $(this).css('fill');
+            $(this).css('fill','blue');
+        }
     });
     $('path').mouseleave(function(){
-        $(this).css('fill',color);
+        if(blue==0){
+            $(this).css('fill',color);
+        }
     });
     $('#mesta1').click(function(){
         errorcatcher=1;
@@ -240,29 +245,50 @@ $(document).ready(function(){
         errorcatcher=1;
         if(onoff2==0){
             $("#unesco1").css('fill','red');
-            $("rect").not("#unesco1").not("#mesta1").toggle(500);
+            $("rect").not("#unesco1").not("#mesta1").not("#hov1").toggle(500);
             onoff2=1;
         } else {
             $("#unesco1").css('fill','green');
             onoff2=0;
-            $("rect").not("#unesco1").not("#mesta1").toggle(500);
+            $("rect").not("#unesco1").not("#mesta1").not("#hov1").toggle(500);
         }
     });
     $('#unesco2').click(function(){
         if(onoff2==0){
             $("#unesco1").css('fill','red');
-            $("rect").not("#unesco1").not("#mesta1").toggle(500);
+            $("rect").not("#unesco1").not("#mesta1").not("#hov1").toggle(500);
             onoff2=1;
         } else {
             $("#unesco1").css('fill','green');
             onoff2=0;
-            $("rect").not("#unesco1").not("#mesta1").toggle(500);
+            $("rect").not("#unesco1").not("#mesta1").not("#hov1").toggle(500);
         }
     });
+//
+    $('#hov1').click(function(){
+        errorcatcher=1;
+        if(blue==0){
+            $("#hov1").css('fill','red');
+            blue=1;
+        } else {
+            $("#hov1").css('fill','green');
+            blue=0;
+        }
+    });
+    $('#hov2').click(function(){
+        if(blue==0){
+            $("#hov1").css('fill','red');
+            blue=1;
+        } else {
+            $("#hov1").css('fill','green');
+            blue=0;
+        }
+    });
+
     $('circle').click(function(){
 
         $("circle").css('fill','red');
-        $("rect").not("#unesco1").not("#mesta1").css('fill','black');
+        $("rect").not("#unesco1").not("#mesta1").not("#hov1").css('fill','black');
         $(this).css('fill','green');
         let id = $(this).attr('id');
         let elem = symb.find(item => {return item.id == id});
@@ -279,7 +305,7 @@ $(document).ready(function(){
     $('rect').click(function(){
         if(errorcatcher==0){
             $("circle").css('fill','red');
-            $("rect").not("#unesco1").not("#mesta1").css('fill','black');
+            $("rect").not("#unesco1").not("#mesta1").not("#hov1").css('fill','black');
             $(this).css('fill','green');
             let id = $(this).attr('id');
             let elem = symb.find(item => {return item.id == id});
